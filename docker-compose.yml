@@ -1,0 +1,14 @@
+version : "3.7"
+services:
+    data-server:
+        build:
+          context: .
+          args:
+            BASE_JAVA_IMAGE: $BASE_JAVA_IMAGE
+        environment:
+          JAVA_OPTS: $JAVA_OPTS
+        ports:
+          - target: 8080
+            published: "${APP_PORT:-8080}"
+          
+

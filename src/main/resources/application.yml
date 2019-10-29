@@ -1,0 +1,8 @@
+explore:
+    input:
+       url: https://gist.githubusercontent.com/joelbirchler/66cf8045fcbb6515557347c05d789b4a/raw/9a196385b44d4288431eef74896c0512bad3defe/exoplanets
+    output:
+       download-path: C:\\junks\\data
+       final-download-path: C:\\junks\\data
+
+
