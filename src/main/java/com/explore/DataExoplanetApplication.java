@@ -23,4 +23,6 @@ public class DataExoplanetApplication {
     return  new DataManagerImpl(environment);
   }
 
+
+
 }

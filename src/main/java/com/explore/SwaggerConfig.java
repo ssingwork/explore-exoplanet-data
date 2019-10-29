@@ -26,7 +26,7 @@ public class SwaggerConfig {
 
 
   private ApiInfo getApiInfo() {
-    return new ApiInfoBuilder().title("UIC Mock Server APIs")
+    return new ApiInfoBuilder().title("Data Exoplanet APIs")
         .description("This page will help you to go over the API documentation").version("1.0.0").build();
   }
 

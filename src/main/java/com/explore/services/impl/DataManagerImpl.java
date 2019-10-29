@@ -108,7 +108,14 @@ public class DataManagerImpl extends BaseDataManager implements DataManager {
                if (downloadedJsonFile == null) {
                     String jsonURL = environment.getRequiredProperty("explore.input.url");
                     String downloadDir = environment.getRequiredProperty("explore.output.download-path");
+
+                    if(!new File(downloadDir).exists()){
+                        logger.info("Running first time!! download folder {} is not exists, try to create.",downloadDir);
+                        new File(downloadDir).mkdirs();
+                    }
+
                     try {
+
                         downloadedJsonFile = DownloadUtils.downloadJsonFile(new URL(jsonURL),new File(downloadDir),"exoplanet_data");
                      }catch (MalformedURLException e){
                         logger.error("Invalid URL {} ",jsonURL );
