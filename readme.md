@@ -1,5 +1,5 @@
 ## Exoplanet Data Exploration
-This is a small Spring Boot application download which JSON dataset from `https://gist.githubusercontent.com/joelbirchler/66cf8045fcbb6515557347c05d789b4a/raw/9a196385b44d4288431eef74896c0512bad3defe/exoplanets` and try to answer following questions.
+This is a small Spring Boot application which download  JSON dataset from `https://gist.githubusercontent.com/joelbirchler/66cf8045fcbb6515557347c05d789b4a/raw/9a196385b44d4288431eef74896c0512bad3defe/exoplanets` and try to answer following questions.
 Created 3 api end point for following 3 question. 
 
 - The number of orphan planets (no star).
