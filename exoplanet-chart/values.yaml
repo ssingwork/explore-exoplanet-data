@@ -5,17 +5,19 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
-  pullPolicy: IfNotPresent
+  repository: subhasatdocker/exoplanet-data
+  tag: v1
+  pullPolicy: Always
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+# For production we will use ClusterIP with Ingress
+# controller , now we will use NodePort for easy access
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 9099
 
 ingress:
   enabled: false
