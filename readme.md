@@ -13,6 +13,7 @@ Created 3 api end point for following 3 question.
     - URL : http://localhost:9099/planets/discovery-timeline-by-year-size
 
 ## Data Record Format
+
 `
  {
     "PlanetIdentifier": "KOI-1843.03",
@@ -40,12 +41,15 @@ Created 3 api end point for following 3 question.
     "HostStarTempK": 3584,
     "HostStarAgeGyr": ""
   }
+
 `
+
 ## How to run
-    Download project from github repo, https://github.com/ssingwork/explore-exoplanet-data.git.  
+   
+   Download project from github repo, https://github.com/ssingwork/explore-exoplanet-data.git.  
      `
      cd c:/
-     cd clone https://github.com/ssingwork/explore-exoplanet-data.git
+     git clone https://github.com/ssingwork/explore-exoplanet-data.git
      # code will be at c:/explore-exoplanet-data   
      `
     
